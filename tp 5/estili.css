@@ -1,0 +1,62 @@
+*
+{
+	padding: 0;
+	border: 0;
+    text-align: center;	
+}
+body{
+	background-color: grey;
+}
+
+#tablero
+{
+float: left;
+padding:10px;
+background-color: #5A79B1;
+border:5px solid black;
+margin-left: 33%;
+
+}
+
+
+.tile
+{
+	width: 64px;
+	height: 64px;
+	float: left;
+}
+
+.black
+{
+
+background-color: #6E2C00;
+font-size: 30px;
+line-height: 10px;
+display: inline-block;
+}
+
+.white
+{
+background-color:#EB984E;
+font-size: 30px;
+line-height: 10px;
+display: inline-block;
+
+}
+
+.blancas{
+	color: white;
+}
+.negritas{
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+

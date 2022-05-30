@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otra calculadora para jorge</title>
+</head>
+<body>
+    <style>
+        .container{
+            display: flex;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            position: relative;
+            margin: auto;
+            background-color: aquamarine;
+            width: 75%;
+            height: auto;
+        }
+
+        .coso{
+            margin: auto;
+            text-align: center;
+        }
+        .saulbuenhombre{
+            height: 50px;
+            width: 80px;
+        }
+
+    </style>
+    <div >
+        <div id="divi" class="container"id="cuerpo">
+            <div class="coso">
+                <div> <h1>Calculadora del Señor Jorge</h1>
+                        <H2>perdon no se <b>CSS</b> pero tengo que aprender</H2>
+                </div>
+                <form onSubmit="culo(event);">
+                    <select class="saulbuenhombre">
+                        <option value="sumar">sumar</option>
+                        <option value="restar">restar</option>
+                        <option value="multiplicar">multiplicar</option>
+                        <option value="dividir">dividir</option>
+                        <option value="ඞ">ඞඞඞ</option>
+                    </select>
+                    <br/><br/>
+                    <input type="text"></input><br/><br/>
+                    <input type="text"></input><br/><br/>
+                    <br/><br/>
+                    <button style="background-color: red;width: 60px; height: 50;font-size: 35px;", type="submit">ඞ</button>
+                    <br/><br/>
+                    <select id="caritas">
+                        <option value="carita1">carita 1</option>
+                        <option value="carita2">carita 2</option>
+                        <option value="carita3">caria 3</option>
+                    </select>
+                    <div>
+                        <h3 class="coso">carita en console</h3>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const caritas = document.querySelector('#caritas')
+
+        caritas.onchange = () => console.log(caritas.value)
+        switch(caritas.value){
+            case 'carita2':
+                var carita = ['⢕⢕⢕⢕⢕⠅⢗⢕⠕⣠⠄⣗⢕⢕⠕⢕⢕⢕⠕⢠⣿⠐⢕⢕⢕⠑⢕⢕⠵⢕','⢕⢕⢕⢕⠁⢜⠕⢁⣴⣿⡇⢓⢕⢵⢐⢕⢕⠕⢁⣾⢿⣧⠑⢕⢕⠄⢑⢕⠅⢕','⢕⢕⠵⢁⠔⢁⣤⣤⣶⣶⣶⡐⣕⢽⠐⢕⠕⣡⣾⣶⣶⣶⣤⡁⢓⢕⠄⢑⢅⢑','⠍⣧⠄⣶⣾⣿⣿⣿⣿⣿⣿⣷⣔⢕⢄⢡⣾⣿⣿⣿⣿⣿⣿⣿⣦⡑⢕⢤⠱⢐','⢠⢕⠅⣾⣿⠋⢿⣿⣿⣿⠉⣿⣿⣷⣦⣶⣽⣿⣿⠈⣿⣿⣿⣿⠏⢹⣷⣷⡅⢐','⣔⢕⢥⢻⣿⡀⠈⠛⠛⠁⢠⣿⣿⣿⣿⣿⣿⣿⣿⡀⠈⠛⠛⠁⠄⣼⣿⣿⡇⢔','⢕⢕⢽⢸⢟⢟⢖⢖⢤⣶⡟⢻⣿⡿⠻⣿⣿⡟⢀⣿⣦⢤⢤⢔⢞⢿⢿⣿⠁⢕','⢕⢕⠅⣐⢕⢕⢕⢕⢕⣿⣿⡄⠛⢀⣦⠈⠛⢁⣼⣿⢗⢕⢕⢕⢕⢕⢕⡏⣘⢕','⢕⢕⠅⢓⣕⣕⣕⣕⣵⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣷⣕⢕⢕⢕⢕⡵⢀⢕⢕','⢑⢕⠃⡈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢃⢕⢕⢕']
+                for (i = 0; i <= carita.length -1; i ++){console.log(carita[i])}
+        }
+        
+        
+            var carita = ['⢕⢕⢕⢕⢕⠅⢗⢕⠕⣠⠄⣗⢕⢕⠕⢕⢕⢕⠕⢠⣿⠐⢕⢕⢕⠑⢕⢕⠵⢕','⢕⢕⢕⢕⠁⢜⠕⢁⣴⣿⡇⢓⢕⢵⢐⢕⢕⠕⢁⣾⢿⣧⠑⢕⢕⠄⢑⢕⠅⢕','⢕⢕⠵⢁⠔⢁⣤⣤⣶⣶⣶⡐⣕⢽⠐⢕⠕⣡⣾⣶⣶⣶⣤⡁⢓⢕⠄⢑⢅⢑','⠍⣧⠄⣶⣾⣿⣿⣿⣿⣿⣿⣷⣔⢕⢄⢡⣾⣿⣿⣿⣿⣿⣿⣿⣦⡑⢕⢤⠱⢐','⢠⢕⠅⣾⣿⠋⢿⣿⣿⣿⠉⣿⣿⣷⣦⣶⣽⣿⣿⠈⣿⣿⣿⣿⠏⢹⣷⣷⡅⢐','⣔⢕⢥⢻⣿⡀⠈⠛⠛⠁⢠⣿⣿⣿⣿⣿⣿⣿⣿⡀⠈⠛⠛⠁⠄⣼⣿⣿⡇⢔','⢕⢕⢽⢸⢟⢟⢖⢖⢤⣶⡟⢻⣿⡿⠻⣿⣿⡟⢀⣿⣦⢤⢤⢔⢞⢿⢿⣿⠁⢕','⢕⢕⠅⣐⢕⢕⢕⢕⢕⣿⣿⡄⠛⢀⣦⠈⠛⢁⣼⣿⢗⢕⢕⢕⢕⢕⢕⡏⣘⢕','⢕⢕⠅⢓⣕⣕⣕⣕⣵⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣷⣕⢕⢕⢕⢕⡵⢀⢕⢕','⢑⢕⠃⡈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢃⢕⢕⢕']
+            for (i = 0; i <= carita.length -1; i ++){console.log(carita[i])}
+        
+        
+
+
+
+        const elcositoquebaja = document.getElementsByTagName("select");
+        const numerero = document.getElementsByTagName("input");
+        const cuerpo = document.querySelector("#divi")
+        const culo = (event) => {
+            event.preventDefault();
+            switch(elcositoquebaja[0].value){
+                case "sumar":
+
+                    return alert("La suma es: " + (+numerero[0].value + +numerero[1].value));
+                    break;
+                case "restar":
+                    return alert("La merma es: " + (+numerero[0].value - numerero[1].value));
+                    break;
+                case "multiplicar":
+                    return alert("La esto por esto es: " + (+numerero[0].value * +numerero[1].value));
+                    break;
+                case "dividir":
+                    return alert("nose dividr pero el resultado es: " + (+numerero[0].value / +numerero[1].value));
+                    break;
+                case 'ඞ': 
+                    return alert('ඞඞඞඞඞඞ')
+                    return divi.style.backgroundColor = "white"
+                    break;
+                
+            }
+
+        }
+    </script>
+
+</body>
+</html>
