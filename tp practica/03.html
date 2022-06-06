@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: aqua;
+        }
+        .fondo{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div id="saludo">
+        Hola Mundo !
+    </div>
+    <script>
+        
+        // Ejercicio 1
+        class Persona{
+            constructor(nombre, edad, genero){
+                this.nombre = nombre;
+                this.edad = edad;
+                this.genero = genero;
+            }
+            obtDetalles(){
+                console.log(`Nombre: ${this.nombre}, Edad: ${this.edad}, Genero: ${this.genero}`);
+            }
+        }
+
+        class Estudiante extends Persona{
+            constructor(curso, grupo){
+                super();
+                this.curso = curso;
+                this.grupo = grupo;
+            }
+            registrar(curso, grupo){
+                this.curso = curso;
+                this.grupo = grupo;
+            }
+        }
+
+        class Profesor extends Persona{
+            constructor(asignatura, nivel){
+                super();
+                this.asignatura = asignatura;
+                this.nivel = nivel;
+            }
+            asignar(asignatura, nivel){
+                this.asignatura = asignatura;
+                this.nivel = nivel;
+            }
+        }
+
+        const marco = new Estudiante;
+        marco.nombre = "Marco Baldissone";
+        marco.edad = 38;
+        marco.genero = "Masculino";
+        marco.registrar("2do", "A");
+        marco.obtDetalles();
+
+        const jorge = new Profesor;
+        jorge.nombre = "Jorge Gracia";
+        jorge.edad = 25;
+        jorge.genero = "Masculino";
+        jorge.asignar("Programacion", "III");
+
+        console.log(marco);
+        console.log(jorge);
+
+        // Ejercicio 2
+        // String, Boolean y Object
+
+        // Ejercicio 3
+        // Hace referencia al objeto que lo contiene
+
+        // Ejercicio 4
+        document.getElementById("saludo").className = "fondo";
+
+        // Ejercicio 5
+        // for, while, do while, for in, for of, 
+
+        //  Ejercicio 6
+        console.log(3 + 2 + "7"); // 57
+
+        // Ejercicio 7
+        // Devuelve un string indicando el tipo de datos de una variable
+
+        // Ejercicio 8
+        const factorial = (n) => {
+            let resultado = 1;
+            for(let i = 1; i < n + 1; i++){
+                resultado = resultado * i;
+            }
+            console.log(resultado);
+        }
+        
+        factorial(6);
+        factorial(5);
+        factorial(10);
+
+
+        // Ejercicio 9
+        const palindromo = (str) => {
+            str = str.split(" ").join("").toLowerCase();
+            str2 = str.split("").reverse().join("").toLowerCase();
+
+            if(str === str2){
+                console.log("El string proporcionado es palindromo");
+            }else{
+                console.log("El string proporcionado NO es palindromo");
+            }
+        }
+
+        palindromo("meneM");
+        palindromo("La ruta nos aporto otro paso natural");
+        palindromo("asd");
+
+    </script>
+</body>
+</html>
